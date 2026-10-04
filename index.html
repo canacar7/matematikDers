@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matematik Özel Ders | Batuhan Bulut</title>
+<meta name="description" content="Ortaokul ve lise öğrencilerine birebir matematik özel dersi. LGS, TYT ve AYT hazırlık.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f8fc;
+    --card: #ffffff;
+    --text: #1d2433;
+    --muted: #5b6475;
+    --accent: #2f5bea;
+    --accent-soft: #e6ecfd;
+    --green: #1fa855;
+    --border: #e3e6ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151c;
+      --card: #1b2029;
+      --text: #e9ecf2;
+      --muted: #a2aabb;
+      --accent: #7c9cff;
+      --accent-soft: #232c45;
+      --border: #2a3140;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Nunito", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero {
+    padding: 56px 0 40px;
+    text-align: center;
+    background:
+      radial-gradient(circle at 20% 20%, var(--accent-soft) 0, transparent 50%),
+      radial-gradient(circle at 80% 0%, var(--accent-soft) 0, transparent 45%);
+  }
+  .avatar {
+    width: 140px; height: 140px; border: 4px solid var(--card); box-shadow: 0 6px 20px rgba(0,0,0,.15); border-radius: 50%;
+    margin: 0 auto 16px;
+    background: var(--accent); color: #fff;
+    display: grid; place-items: center;
+    font-size: 48px; font-weight: 800;
+    object-fit: cover;
+  }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0 0 4px; }
+  .subtitle { color: var(--muted); font-size: 1.1rem; margin: 0 0 24px; }
+
+  .btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px; border-radius: 999px;
+    font-weight: 700; text-decoration: none; font-size: 1rem;
+  }
+  .btn-wa { background: var(--green); color: #fff; }
+  .btn-tel { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+
+  section { padding: 32px 0; }
+  h2 { font-size: 1.5rem; margin: 0 0 16px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 20px;
+  }
+  .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+  .card ul { margin: 0; padding-left: 20px; color: var(--muted); }
+  .tag {
+    display: inline-block; background: var(--accent-soft); color: var(--accent);
+    font-weight: 700; font-size: .8rem; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px;
+  }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .steps li {
+    counter-increment: s; background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 16px 14px 56px; position: relative;
+  }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 16px; top: 14px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-weight: 800;
+    display: grid; place-items: center;
+  }
+  .contact { text-align: center; }
+  .contact p { color: var(--muted); }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 24px 0 40px; }
+
+  .wa-float {
+    position: fixed; right: 16px; bottom: 16px;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--green); display: grid; place-items: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="avatar" src="foto.jpg" alt="Batuhan Bulut">
+    <h1>Batuhan Bulut</h1>
+    <p class="subtitle">Matematik Öğretmeni · Ortaokul &amp; Lise Özel Ders</p>
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/905XXXXXXXXX?text=Merhaba%2C%20matematik%20%C3%B6zel%20ders%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+      <a class="btn btn-tel" href="tel:+905XXXXXXXXX">Hemen Ara</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>Hakkımda</h2>
+    <div class="card">
+      <p style="margin:0">
+        [X] yıllık deneyime sahip matematik öğretmeniyim. Öğrencinin seviyesini belirleyip
+        eksik konuları tamamlayarak, konuyu ezberletmeden <strong>mantığıyla</strong> öğretmeyi hedefliyorum.
+        Düzenli ödev takibi ve deneme analizleriyle veliyi de süreçten haberdar ediyorum.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dersler</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">5 – 8. Sınıf</span>
+        <h3>Ortaokul Matematik</h3>
+        <ul>
+          <li>Okul derslerine destek</li>
+          <li>Yazılı sınavlara hazırlık</li>
+          <li><strong>LGS</strong> hazırlık ve yeni nesil sorular</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">9 – 12. Sınıf</span>
+        <h3>Lise Matematik</h3>
+        <ul>
+          <li>Okul derslerine destek</li>
+          <li>TYT &amp; AYT Matematik</li>
+          <li>Geometri</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">Esnek</span>
+        <h3>Ders Şekli</h3>
+        <ul>
+          <li>Birebir yüz yüze ders</li>
+          <li>Online ders</li>
+          <li>Küçük grup dersleri</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nasıl Çalışıyoruz?</h2>
+    <ol class="steps">
+      <li><strong>Tanışma görüşmesi:</strong> Öğrencinin hedefleri ve ihtiyaçlarını konuşuruz.</li>
+      <li><strong>Seviye tespiti:</strong> Kısa bir değerlendirme ile eksik konuları belirleriz.</li>
+      <li><strong>Kişisel plan:</strong> Öğrenciye özel ders ve çalışma programı hazırlanır.</li>
+      <li><strong>Takip:</strong> Ödev kontrolü, deneme analizi ve veliye düzenli bilgilendirme.</li>
+    </ol>
+  </section>
+
+  <section class="contact">
+    <h2>İletişim</h2>
+    <p>Bölge: Ankara · Online ders tüm Türkiye'ye</p>
+    <p>Ders ücretleri ve uygun saatler için yazabilirsiniz.</p>
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/905XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-tel" href="tel:+905XXXXXXXXX">0 5XX XXX XX XX</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Batuhan Bulut · Matematik Özel Ders</footer>
+
+<a class="wa-float" href="https://wa.me/905XXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+</a>
+
+</body>
+</html>
